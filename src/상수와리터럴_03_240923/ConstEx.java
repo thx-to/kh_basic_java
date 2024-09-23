@@ -36,8 +36,9 @@ public class ConstEx {
         System.out.println(rst); // int끼리 계산한 반환값은 double을 씌우기 전에 이미 0.00이 됨
         */
 
-        /*
+
         // 의도를 가지고 바꿔보기
+        /*
         int num1 = 1, num2 = 4;
         double rst = (double) num1 / num2; // 앞 num1은 명시적 형변환(앞에 double), num2는 묵시적 형변환 / 명시적 형변환과 묵시적 형변환이 함께 일어남
         System.out.println(rst);
