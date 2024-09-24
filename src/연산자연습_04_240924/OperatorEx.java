@@ -105,8 +105,8 @@ public class OperatorEx {
 
         // 3자리 정수를 입력받아 3개(100의 자리, 10의 자리, 1의 자리)의 변수에 나누어 담아서 출력하기
 
-        // 해보려고한거 1 char로 받고 싶었는데 입력이 세번 필요함
         /*
+        // 해보려고한거 1 char로 받고 싶었는데 입력이 세번 필요함
         Scanner sc = new Scanner(System.in);
 
         System.out.print("3자리 정수를 입력하세요 : ");
@@ -119,8 +119,36 @@ public class OperatorEx {
         System.out.println("일의 자리 : " + one);
         */
 
-        // 해보려고한거 2 성공
         /*
+        // 해보려고한거 1 피드백을 받았는데 더 어렵당..ㅎㅎ. for문 사용
+        Scanner sc = new Scanner(System.in);
+        System.out.print("3자리 정수를 입력하세요 : ");
+        String num = sc.next();
+
+        for (int i = 0; i < num.length(); i++) {
+        char ch = num.charAt(i);
+        System.out.print(ch + " ");
+        }
+        */
+
+        /*
+        // 해보려고한거 1 피드백 이게진짜
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("3자리 정수를 입력하세요 : "); // 입력받은 값은 num 1개임
+        String num = sc.next(); // 1개의 num을 통일해서 앞에 써주고, 뒤에 sc.next() 대신 num으로 써줌
+
+        char hun = num.charAt(0); // 앞에 1개의 num을 통일해서 써주고, sc.next() 대신 num으로 써줌
+        char ten = num.charAt(1);
+        char one = num.charAt(2);
+
+        System.out.println("백의 자리 : " + hun);
+        System.out.println("십의 자리 : " + ten);
+        System.out.println("일의 자리 : " + one);
+        */
+
+        /*
+        // 해보려고한거 2 성공
         Scanner sc = new Scanner(System.in);
 
         System.out.print("3자리 정수를 입력하세요 : ");
@@ -139,6 +167,7 @@ public class OperatorEx {
         System.out.println("일의 자리 : " + one);
         */
 
+        /*
         // 강사님 답
         Scanner sc = new Scanner(System.in);
         System.out.println("정수를 입력하세요 : ");
@@ -147,7 +176,7 @@ public class OperatorEx {
         int b = (num % 100) / 10; // num값을 100으로 나눈 나머지인 56을 다시 10으로 나눈 몫
         int c = num % 10; // num값을 10으로 나눈 나머지
         System.out.printf("백의 자리 %d 십의 자리 %d 일의 자리 %d\n", a, b, c);
-
+        */
 
     }
 }
