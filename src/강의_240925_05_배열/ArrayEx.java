@@ -13,31 +13,36 @@ package 강의_240925_05_배열;
 public class ArrayEx {
     public static void main(String[] args) {
 
-        /*
+
         int[] score = new int[3]; // 길이가 3인 int 배열 생성
 
         score[0] = 78;
         score[1] = 80;
         score[2] = 90;
 
+        /*
         // 범위 기반 for문
         for(int i = 0; i < score.length; i++) { // 인덱스니까 길이보다 작은게 범위
             score[0] = score[i] + 10; // 배열 내용 변경 가능
             System.out.print(score[i] + " ");
         }
+        */
 
+        /*
         // 향상된 for문
         for(int e : score) {
             e = e + 10; // 이렇게 써도 배열 내용 변경 안됨
             System.out.print(e + " ");
         }
         */
-    }
+
+
+
+
 
         // 배열을 선언하는 여러가지 방법
-    static void arrayDefine() {
-
         // 요 두가지가 제일 많이 쓰임
+
         int[] score1 = new int[4]; // 힙 영역에 메모리 공간을 확보
         int[] score2 = {88, 99, 43}; // 컴파일러가 크기를 알 수 있으므로 크기 지정이 필요 없음
 
@@ -46,8 +51,8 @@ public class ArrayEx {
         int[] score4;
         score4 = new int[]{34, 55, 66};
 
-        }
 
 
 
+    }
 }

@@ -15,7 +15,6 @@ public class DoubleArrEx {
             }
         }
 
-
         for (int[] ee : arr) { // 이차원 배열에 일차원 배열이 두개 들어감, arr은 2차원 배열에 대한 참조 변수로 배열 전체를 가리킴
             for (int e : ee) {
                 System.out.print(e + " ");

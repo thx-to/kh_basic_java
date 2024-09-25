@@ -37,28 +37,15 @@ public class IteratorEx2 {
         }
         */
 
+
         /*
         // 예제 1 해설, ideal하다고 하심
         for (int i = 1; i <= 1000; i++) {
-            if (i % 7 == 0) {
-                if (i % 70 == 0); System.out.println(); // 7의 배수니 70으로 나누면 10개씩출력
-                System.out.printf("%5d", i); // %5d : decimal형식, 5칸의 공간을 잡고 오른쪽 정렬
-            }
+            // i가 7의 배수면
+            if (i % 7 == 0) System.out.printf("%5d", i); // i가 7의 배수면 5칸의 공간을 잡고 decimal 형식으로 오른쪽 정렬한 i 출력
+            if (i % 70 == 0) System.out.println(); // i가 70의 배수면 줄바꿈
         }
-        System.out.println();
         */
-
-        // 예제 1 해설, ideal하다고 하심 / 안먹어서 만져봄
-        for (int i = 1; i <= 1000; i++) {
-            if (i % 7 == 0) { // i가 7의 배수면
-                if (i % 70 == 0) { // i가 70의 배수면
-                    System.out.println(); // 7의 배수니 70으로 나누면 10개씩출력
-                }
-                System.out.printf("%5d", i); // %5d : decimal형식, 5칸의 공간을 잡고 오른쪽 정렬
-            }
-        }
-        System.out.println();
-
 
 
             /*
@@ -80,12 +67,12 @@ public class IteratorEx2 {
 
         /*
         // 예제 2 해설
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // 입력을 받기 위한 스캐너 생성
         System.out.print("단수 입력 : ");
-        int n = sc.nextInt();
-        System.out.println("=== " + n + "단 ===");
-        for (int i = 1; i <= 9; i++) {
-            System.out.println(n + " X " + i + " = " + (n * i));
+        int n = sc.nextInt(); // n이라는 정수 입력받기
+        System.out.println("=== " + n + "단 ==="); // 첫줄 출력 서식, n단임을 안내
+        for (int i = 1; i <= 9; i++) { // i는 1부터 9까지 1씩 증가하며 반복
+            System.out.println(n + " X " + i + " = " + (n * i)); // 출력 형식은 n x i = n*i
         }
         */
 
@@ -97,16 +84,21 @@ public class IteratorEx2 {
         System.out.print("정수 입력 : ");
         int num = sc.nextInt();
 
-        for (int i = 0; i < num + 1; i++) {
-            for (int j = 0; j < num - i; j++) {// 값을 1씩 빼줌, 첫번째줄은 n, 두번째줄은 n-1 이런식
-                System.out.printf("★");
+        for (int i = 0; i < num; i++) { // i가 0부터 num까지 1씩 더해가면서 돌아
+            for (int j = 0; j < num - i; j++) { // 값을 1씩 빼줌, 첫번째줄은 n, 두번째줄은 n-1 이런식
+                System.out.printf("★"); // j가 별을 찍으면서 돌아.. n이 5라고 가정, i=1/j=4
+            }
+            System.out.println();
+        }
+        // 얘는 기본별
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print("★");
             }
             System.out.println();
         }
         */
 
 
-
     }
-
 }
