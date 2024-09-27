@@ -15,10 +15,10 @@ public class InheritanceBasicEx {
         dog.setName("치와왕");
         System.out.println(dog.getName()); // 부모가 물려줘서 사용 가능
 
-
         HouseDog houseDog = new HouseDog();
         houseDog.setName("스탠뿌");
         houseDog.sleep();
+        houseDog.sleep(4);
 
     }
 }
@@ -28,20 +28,29 @@ class Animal {
     public void setName(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
 }
 
 class Dog extends Animal { // Animal의 자식 클래스
-    void sleep() {
-        System.out.println(name + "zzz"); // 부모 클래스의 sleep 정의
+    void sleep() { // 부모 클래스의 sleep 정의
+        System.out.println(name + "zzz");
     }
 }
 
 class HouseDog extends Dog { // Dog의 자식 클래스, 다단계 상속
-    @Override // 오버라이드 관계가 맞는지 문법적으로 확인해주는 데코레이터, 아니면 오류 출력
-    void sleep() {
-        System.out.println(name + "zzz in the House"); // 자식 클래스의 sleep 정의
+    @Override // 오버라이드 관계가 맞는지 문법적으로 확인해주는 어노테이션(Annotation), 아니면 오류 출력
+    // 오버라이딩 관계가 성립하려면 메서드 이름과 반환 타입이 같아야 함
+    void sleep() { // 자식 클래스의 sleep 정의
+        System.out.println(name + "zzz in the House");
+    }
+
+    // 오버라이딩 이후 오버로딩 관계
+    // sleep이라는 메소드를 중복하여 정의
+    // 매개변수를 hour로 설정함
+    void sleep(int hour) {
+        System.out.println(name + "zzz in the House for " + hour + "hours");
     }
 }
