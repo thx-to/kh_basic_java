@@ -42,6 +42,7 @@ class Car {
     int speed; // 인스턴스 필드
     int horsePower; // 인스턴스 필드
     String color; // 인스턴스 필드
+
     Car(){ // 생성자를 만들어줘서(Car(){}의 빈 형태도 괜찮음) Car santafe = new Car();의 오류를 없앰
         modelName = "산타페";
         speed = 200;
