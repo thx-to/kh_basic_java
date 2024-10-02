@@ -14,11 +14,16 @@ public class SingletonEx {
         Student student2 = new Student();
 
         // 정보를 전달
+        // 아래에서 set하지 않으면 Singleton.java에서 설정한 (쿵, 100)이 찍힘
         student1.setInfo("팜하니", 21);
 
         // 두 개는 다른 객체지만 똑같이 찍힘
         // 내부에 Singleton이라는 객체를 만들어 Singleton을 통해 정보 전달
         // 전달된 정보를 확인
+        // 객체는 총 3개 : Singleton(Singleton 클래스 내부에서 먼저 만들어짐), student1, student2
+        // Student.java setInfo에서 두 개의 전달받은 값(팜하니, 21)을 singleton.name과 singleton.id에 각각 들어감
+        // 모든 곳에서 참조할 수 있는 singleton이라는 공용 변수를 만든 거라고 생각하면 됨
+        // 전역 변수 대신 전역 객체를 만든 것
         student2.viewInfo();
 
 
