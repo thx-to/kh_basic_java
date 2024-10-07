@@ -1,10 +1,10 @@
-package JAVA_241002_04_자동차만들기종합_팀원1의코드수정2;
+package JAVA_241002_04_자동차만들기종합_팀원1수정2;
 
 import java.util.Scanner;
 
-public class PassengerCar extends Vehicle{
-    public PassengerCar(String vehicleType, int mileage, int seat, double speed, int fuelTank) {
-        super(vehicleType, 12, 4, 200, 45);
+public class Bus extends Vehicle{
+    public Bus(String vehicleType, int mileage, int seat, double speed, int fuelTank) {
+        super(vehicleType, 5, 20, 150, 100);
     }
 
     @Override
@@ -21,11 +21,12 @@ public class PassengerCar extends Vehicle{
         System.out.print("부가 기능 [1]ON [2]OFF : ");
         int sel_option = sc.nextInt();
         if (sel_option == 1) {
-            seat += 1;
+            fuelTank += 30;
         }
 
         System.out.print("이동할 승객 수 입력 : ");
         int sel_passenger_num = sc.nextInt();
+
 
         System.out.print("날씨 [1]맑음 [2]비 [3]눈 : ");
         int sel_weather = sc.nextInt();

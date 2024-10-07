@@ -1,4 +1,4 @@
-package JAVA_241002_04_자동차만들기종합_팀원2의코드_fin;
+package JAVA_241002_04_자동차만들기종합_팀원2_fin;
 
 public class PassengerCar extends Car {
     int fuelEconomy = 12;

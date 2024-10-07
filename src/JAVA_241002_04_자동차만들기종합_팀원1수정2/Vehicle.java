@@ -1,13 +1,10 @@
-package JAVA_241002_04_자동차만들기종합_팀원1의코드;
+package JAVA_241002_04_자동차만들기종합_팀원1수정2;
 
 public abstract class Vehicle {
     public String vehicleType;
     public final int FUEL_PRICE = 2000;
     public final int[] DESTINATION_DIST = {0, 400, 200, 150, 300};
-    //    public final int DIST_BUSAN_KM = 400;
-//    public final int DIST_KL_KM = 200;
-//    public final int DIST_DJ_KM = 150;
-//    public final int DIST_GJ_KM = 300;
+
     public int mileage;
     public int seat;
     public int speed;

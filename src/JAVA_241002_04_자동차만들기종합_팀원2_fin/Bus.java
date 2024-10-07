@@ -1,12 +1,12 @@
-package JAVA_241002_04_자동차만들기종합_팀원2의코드_fin;
+package JAVA_241002_04_자동차만들기종합_팀원2_fin;
 
-public class SportsCar extends Car {
-    int fuelEconomy = 8;
-    int speed = 250;
-    int fuelTankSize = 30;
-    int seatNumber = 2;
+public class Bus extends Car {
+    int fuelEconomy = 5;
+    double speed = 150;
+    int fuelTankSize = 100;
+    int seatNumber = 20;
 
-    public SportsCar(String name) {
+    public Bus(String name) {
         super(name);
     }
 
@@ -24,7 +24,9 @@ public class SportsCar extends Car {
         double to = 0;
         double cnt = Math.ceil((double) nop / seatNumber);
         if (nop < seatNumber) cnt = 1;
-        to = cnt * DESTINATION_LIST[area] / (fuelEconomy * fuelTankSize);
+        if (ADD_ONS[add_Ons] == 1) {
+            to = cnt * DESTINATION_LIST[area] / (fuelEconomy * (fuelTankSize + 30));
+        } else to = cnt * DESTINATION_LIST[area] / (fuelEconomy * fuelTankSize);
         return Math.ceil(to);
     }
 
@@ -33,10 +35,7 @@ public class SportsCar extends Car {
         double tdt = 0;
         double cnt = Math.ceil((double) nop / seatNumber);
         if (nop < seatNumber) cnt = 1;
-        if(ADD_ONS[add_Ons] == 1) {
-            tdt = cnt * DESTINATION_LIST[area] / (speed*1.2);
-        }
-        else tdt = cnt * DESTINATION_LIST[area] / speed;
+        tdt = cnt * DESTINATION_LIST[area] / speed;
         if(weather == 2 || weather == 3) tdt *= WEATHER[weather];
         return tdt*60 ;
     }

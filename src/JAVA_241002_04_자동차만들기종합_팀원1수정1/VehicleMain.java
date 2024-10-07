@@ -1,4 +1,4 @@
-package JAVA_241002_04_자동차만들기종합_팀원1의코드수정1;
+package JAVA_241002_04_자동차만들기종합_팀원1수정1;
 
 import java.util.Scanner;
 
