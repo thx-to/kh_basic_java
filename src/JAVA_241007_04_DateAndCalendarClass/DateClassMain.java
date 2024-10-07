@@ -1,4 +1,4 @@
-package JAVA_241007_04_DateAndCalendar;
+package JAVA_241007_04_DateAndCalendarClass;
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
