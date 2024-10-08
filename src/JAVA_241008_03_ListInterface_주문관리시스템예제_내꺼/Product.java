@@ -28,8 +28,8 @@ public class Product {
     public String getName() {
         return this.name;
     }
-    public BigDecimal getPrice() {
-        BigDecimal price = new BigDecimal(this.price);
-        return this.price;
-    }
+    //public BigDecimal getPrice() {
+        //BigDecimal price = new BigDecimal(this.price);
+        //return this.price;
+    //}
 }

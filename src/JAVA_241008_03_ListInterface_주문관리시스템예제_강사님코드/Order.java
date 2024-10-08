@@ -65,7 +65,7 @@ public class Order {
         for (Product e : products) {
             if (e.getName().equals(name)) {
                 products.remove(e);
-                total.subtract(e.getPrice());
+                total = total.subtract(e.getPrice());
                 return true;
             }
         }
@@ -85,5 +85,7 @@ public class Order {
 
     }
 
-
+    public ArrayList<Product> getProducts() {
+        return products;
+    }
 }
