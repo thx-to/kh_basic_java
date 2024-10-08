@@ -119,7 +119,6 @@ public class CoffeeMain {
                         String desc = sc.next();
                         map.put(key5, new MenuInfo(key5, price, category, desc));
                         System.out.println(key5 + " 메뉴가 수정되었습니다.");
-                        sc.nextLine();
                     } else {
                         System.out.println("찾는 메뉴(" + key5 + ")가 없습니다.");
                     }
