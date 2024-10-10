@@ -1,4 +1,4 @@
-package JAVA_241010_03_Comparable_학생성적정렬하기예제_강사님코드;
+package JAVA_241010_03_Comparable_학생성적정렬하기예제_강사님코드ArrayList;
 // 5명의 학생에 대해 이름과 국어, 영어, 수학 성적을 입력받아 정렬하기
 // 총점 기준 성적순(내림차순), 총점이 같으면 이름의 사전순
 // 자료 구조는 TreeSet을 사용해도 되고, ArrayList를 사용해도 됨
@@ -6,15 +6,15 @@ package JAVA_241010_03_Comparable_학생성적정렬하기예제_강사님코드
 // ArrayList는 자동 정렬이 안됨
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-import java.util.TreeSet;
 
 public class StudentSortEx<S> {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        TreeSet<Student> treeSet = new TreeSet<>();
+        List<Student> list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             System.out.print("이름 입력 : ");
             String name = sc.next();
@@ -27,12 +27,14 @@ public class StudentSortEx<S> {
 
             // add할 때 해당 Student 객체에 있는 Compare라는 메소드를 보고 자동 정렬
             // tree를 왼쪽에 붙일지 오른쪽에 붙일지 자동으로 정함
-            treeSet.add(new Student(name, kor, eng, mat));
+            list.add(new Student(name, kor, eng, mat));
         }
-        //
+
+        // Collections.sort() 기본 내림차순 정렬
+        Collections.sort(list);
 
         System.out.println("====== 결과 출력 ======");
-        for (Student e : treeSet) {
+        for (Student e : list) {
             // toString 오버라이딩을 안하면 패키지이름.클래스이름@해시코드값이 찍힘
             // 이렇게(toString 오버라이딩) 안하고 직접 프린트 내용을 설정해도 됨
             System.out.println(e);
