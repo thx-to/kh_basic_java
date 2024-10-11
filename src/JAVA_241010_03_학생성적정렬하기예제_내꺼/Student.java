@@ -1,4 +1,4 @@
-package JAVA_241010_03_Comparable_학생성적정렬하기예제_내꺼;
+package JAVA_241010_03_학생성적정렬하기예제_내꺼;
 
 public class Student implements Comparable<Student> {
 

@@ -1,4 +1,4 @@
-package JAVA_241008_05_HashMap_커피메뉴만들기예제_내꺼;
+package JAVA_241008_05_커피메뉴만들기예제_내꺼;
 
 import java.util.HashMap;
 import java.util.Map;

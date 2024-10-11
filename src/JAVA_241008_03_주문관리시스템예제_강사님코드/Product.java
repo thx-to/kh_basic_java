@@ -1,4 +1,4 @@
-package JAVA_241008_03_ListInterface_주문관리시스템예제_내꺼;
+package JAVA_241008_03_주문관리시스템예제_강사님코드;
 
 import java.math.BigDecimal;
 
@@ -8,15 +8,14 @@ public class Product {
     // 모든 Product 객체가 가질 멤버 변수 정의
     // 1. name : 제품의 이름을 저장하는 변수
     // 2. price : 제품 가격을 BigDecimal로 저장하는 변수
-    String name;
-    int price;
-
+    private String name;
+    private BigDecimal price;
 
     // 두 개의 입력을 받는 생성자
     // 1. 제품의 이름을 나타내는 문자열
     // 2. 제품의 가격을 나타내는 문자열
     // generate로 자동 생성함
-    public Product(String name, int price) {
+    public Product(String name, BigDecimal price) {
         this.name = name;
         this.price = price;
     }
@@ -26,10 +25,9 @@ public class Product {
     // 2. getPrice() : 제품의 가격을 BigDecimal로 반환하는 메소드
     // generate로 자동 생성함
     public String getName() {
-        return this.name;
+        return name;
     }
-    //public BigDecimal getPrice() {
-        //BigDecimal price = new BigDecimal(this.price);
-        //return this.price;
-    //}
+    public BigDecimal getPrice() {
+        return price;
+    }
 }

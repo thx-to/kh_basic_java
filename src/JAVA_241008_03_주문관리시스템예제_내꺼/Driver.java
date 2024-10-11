@@ -1,4 +1,4 @@
-package JAVA_241008_03_ListInterface_주문관리시스템예제_내꺼;
+package JAVA_241008_03_주문관리시스템예제_내꺼;
 
 
 /*

@@ -1,4 +1,4 @@
-package JAVA_241010_03_Comparable_학생성적정렬하기예제_강사님코드ArrayList;
+package JAVA_241010_03_학생성적정렬하기예제_강사님코드ArrayList;
 
 // 인터페이스 상속 implements
 public class Student implements Comparable<Student> {

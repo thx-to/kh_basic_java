@@ -1,12 +1,10 @@
-package JAVA_241010_03_Comparable_학생성적정렬하기예제_강사님코드;
+package JAVA_241010_03_학생성적정렬하기예제_강사님코드;
 // 5명의 학생에 대해 이름과 국어, 영어, 수학 성적을 입력받아 정렬하기
 // 총점 기준 성적순(내림차순), 총점이 같으면 이름의 사전순
 // 자료 구조는 TreeSet을 사용해도 되고, ArrayList를 사용해도 됨
 // TreeSet의 경우는 중복 제거가 되므로 유일한 키가 없는 경우 주의해야 함 (이름도 같고 총점도 같은 경우 중복제거됨)
 // ArrayList는 자동 정렬이 안됨
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import java.util.TreeSet;
 
